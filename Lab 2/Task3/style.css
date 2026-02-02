@@ -1,0 +1,400 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f8fa;
+    color: #24292f;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+.hero-section {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%);
+    border-bottom: 1px solid #d0d7de;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #0969da, #8250df);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.1;
+}
+
+.hero-description {
+    font-size: 20px;
+    color: #57606a;
+    max-width: 800px;
+    margin: 0 auto 32px;
+}
+
+/* Кнопки */
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background-color: #0969da;
+    color: white;
+    border-color: #0969da;
+}
+
+.btn-primary:hover {
+    background-color: #0550ae;
+    border-color: #0550ae;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #24292f;
+    border-color: #d0d7de;
+}
+
+.btn-secondary:hover {
+    background-color: #f6f8fa;
+    border-color: #afb8c1;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: white;
+    color: #0969da;
+    border-color: #0969da;
+}
+
+.btn-outline:hover {
+    background-color: #f6f8fa;
+    transform: translateY(-2px);
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #24292f;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #57606a;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 48px;
+}
+
+
+.pricing-tiers {
+    padding: 80px 0;
+}
+
+.tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.tier-card {
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tier-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
+}
+
+.tier-card.popular {
+    border-color: #0969da;
+    border-width: 1px;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #0969da, #8250df);
+    color: rgb(20, 17, 17);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tier-header {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.tier-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #191d23;
+}
+
+.tier-price {
+    margin-bottom: 8px;
+}
+
+.price-amount {
+    font-size: 48px;
+    font-weight: 800;
+    color: #24292f;
+}
+
+.price-period {
+    font-size: 16px;
+    color: #57606a;
+}
+
+.tier-description {
+    color: #57606a;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.tier-features {
+    list-style: none;
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
+
+.tier-features li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #24292f;
+}
+
+.tier-features i {
+    color: #1a7f37;
+    margin-right: 12px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.trial-note {
+    font-size: 12px;
+    color: #57606a;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.billing-note {
+    text-align: center;
+    padding: 24px;
+    background-color: #f6f8fa;
+    border-radius: 8px;
+    border: 1px solid #d0d7de;
+}
+
+.billing-note a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.billing-note a:hover {
+    text-decoration: underline;
+}
+
+/* Секция аддонов */
+.addons-section {
+    padding: 80px 0;
+    background-color: white;
+    border-top: 1px solid #d0d7de;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.addon-card {
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addon-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border-color: #0969da;
+}
+
+.addon-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #f6f8fa, #eaeef2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.addon-icon i {
+    font-size: 24px;
+    color: #0969da;
+}
+
+.addon-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #24292f;
+}
+
+.addon-description {
+    font-size: 14px;
+    color: #57606a;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.addon-price {
+    margin-bottom: 20px;
+}
+
+.price-per {
+    font-size: 24px;
+    font-weight: 700;
+    color: #24292f;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .tiers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .addons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tier-card:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-description {
+        font-size: 18px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .tiers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tier-card:nth-child(3) {
+        grid-column: span 1;
+    }
+    
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero-section {
+        padding: 48px 0;
+    }
+    
+    .pricing-tiers,
+    .addons-section {
+        padding: 48px 0;
+    }
+    
+    .tier-card,
+    .addon-card {
+        padding: 24px 16px;
+    }
+    
+    .price-amount {
+        font-size: 40px;
+    }
+}
