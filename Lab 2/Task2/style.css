@@ -1,0 +1,331 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #262626;
+}
+
+
+.container {
+    display: flex;
+    max-width: 935px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+
+.phone-mockup {
+    position: relative;
+    display: none;
+}
+
+@media (min-width: 876px) {
+    .phone-mockup {
+        display: block;
+    }
+}
+
+.phone-image {
+    height: 600px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.block {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.logo {
+    margin: 22px auto 12px;
+    font-family: 'Instagram Sans', -apple-system, sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    background: linear-gradient(45deg, 
+        #405DE6, #5851DB, #833AB4, #C13584, 
+        #E1306C, #FD1D1D, #F56040, #F77737, 
+        #FCAF45, #FFDC80);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 24px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-group {
+    margin-bottom: 6px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 9px 8px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #262626;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #a8a8a8;
+}
+
+.input-field::placeholder {
+    color: #8e8e8e;
+}
+
+
+.login-button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #1877f2;
+}
+
+.login-button:disabled {
+    background-color: #b2dffc;
+    cursor: default;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.divider span {
+    padding: 0 18px;
+}
+
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fb-login {
+    background-color: transparent;
+    border: none;
+    color: #385185;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px;
+    transition: opacity 0.2s;
+}
+
+.fb-login:hover {
+    opacity: 0.8;
+}
+
+.fb-login i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.forgot-password {
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 12px;
+    display: block;
+    transition: color 0.2s;
+}
+
+.forgot-password:hover {
+    color: #0095f6;
+}
+
+
+.signup-block {
+    font-size: 14px;
+    padding: 20px;
+}
+
+.signup-block a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.signup-block a:hover {
+    color: #1877f2;
+}
+
+.app-download {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.app-download p {
+    margin-bottom: 15px;
+    color: #262626;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.app-button {
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.app-button:hover {
+    transform: scale(1.05);
+}
+
+
+.footer {
+    margin-top: 50px;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: #8e8e8e;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #262626;
+}
+
+.footer-meta {
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+
+@media (max-width: 875px) {
+    .container {
+        margin-top: 30px;
+        gap: 0;
+    }
+    
+    .block {
+        padding: 20px;
+    }
+    
+    .phone-mockup {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background-color: #fff;
+        padding: 0;
+    }
+    
+    .block {
+        border: none;
+        background-color: transparent;
+        padding: 20px 10px;
+    }
+    
+    .container {
+        margin-top: 0;
+    }
+    
+    .footer {
+        margin-top: 30px;
+    }
+    
+    .footer-links {
+        gap: 10px;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.block {
+    animation: fadeIn 0.5s ease-out;
+}
