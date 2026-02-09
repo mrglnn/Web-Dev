@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="ToDo.css">
+    <script src="ToDo.js"></script>
+</head>
+<body>
+    <main class="main">
+
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title">ToDo List</h1>
+            </div>
+        </header>
+
+
+        <div class="main-form">
+
+            <div class="main-logo">
+                <h2 class="main-logo-text">ToDo List</h2>
+            </div>
+
+            <form id="todoForm" class="task-container">
+            <label for="taskInput" class="visually-hidden">Enter new task</label>
+            <input type="text" id="taskInput" placeholder="New Task" class="task-input" required>
+            <button type="submit" id="addBtn" class="add-button">Add</button>
+            </form>
+
+        </div>
+
+        <div class="tasks-container">
+        <ul id="taskList" class="task-list-container"></ul>
+        </div>
+    </main>
+</body>
+</html>
