@@ -1,0 +1,16 @@
+
+<nav class="top-nav">
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a routerLink="/albums" routerLinkActive="active">Albums</a>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<style>
+  .top-nav { display:flex; gap:1rem; padding:0.5rem 1rem; background:#fff; position:sticky; top:0; z-index:10; border-bottom:1px solid #eee }
+  .top-nav a { text-decoration:none; color:#333; font-weight:600 }
+  .top-nav a.active { color:#007acc; }
+</style>
